@@ -10,89 +10,103 @@ public class  Setup{
     public static final String BASE_URL = "https://fakestoreapi.com/";
 
     public static String cartRequestBody() {
-        return "{\n" +
-               "  \"userId\": 1,\n" +
-               "  \"date\": \"2023-10-01T00:00:00.000Z\",\n" +
-               "  \"products\": [\n" +
-               "    {\n" +
-               "      \"productId\": 1,\n" +
-               "      \"quantity\": 2\n" +
-               "    }\n" +
-               "  ]\n" +
-               "}";
+        return """
+               {
+                 "userId": 1,
+                 "date": "2023-10-01T00:00:00.000Z",
+                 "products": [
+                   {
+                     "productId": 1,
+                     "quantity": 2
+                   }
+                 ]
+               }
+               """;
     }
     public static String updateProductRequestBody() {
-        return "{\n" +
-               "  \"title\": \"Updated Product\",\n" +
-               "  \"price\": 39.99,\n" +
-               "  \"description\": \"This is an updated product\",\n" +
-               "  \"image\": \"https://example.com/updated_image.jpg\",\n" +
-               "  \"category\": \"electronics\"\n" +
-               "}";
+        return """
+               {
+                 "title": "Updated Product",
+                 "price": 39.99,
+                 "description": "This is an updated product",
+                 "image": "https://example.com/updated_image.jpg",
+                 "category": "electronics"
+               }
+               """;
     }    // ...existing code...
 
     public static String createProductRequestBody() {
-        return "{\n" +
-               "  \"id\": 0,\n" +
-               "  \"title\": \"string\",\n" +
-               "  \"price\": 0.1,\n" +
-               "  \"description\": \"string\",\n" +
-               "  \"category\": \"string\",\n" +
-               "  \"image\": \"http://example.com\"\n" +
-               "}";
+        return """
+               {
+                 "id": 0,
+                 "title": "string",
+                 "price": 0.1,
+                 "description": "string",
+                 "category": "string",
+                 "image": "http://example.com"
+               }
+               """;
     }
 
 
     public static String createCartRequestBody() {
-        return "{\n" +
-               "  \"id\": 0,\n" +
-               "  \"userId\": 0,\n" +
-               "  \"products\": [\n" +
-               "    {\n" +
-               "      \"id\": 0,\n" +
-               "      \"title\": \"string\",\n" +
-               "      \"price\": 0.1,\n" +
-               "      \"description\": \"string\",\n" +
-               "      \"category\": \"string\",\n" +
-               "      \"image\": \"http://example.com\"\n" +
-               "    }\n" +
-               "  ]\n" +
-               "}";
+        return """
+               {
+                 "id": 0,
+                 "userId": 0,
+                 "products": [
+                   {
+                     "id": 0,
+                     "title": "string",
+                     "price": 0.1,
+                     "description": "string",
+                     "category": "string",
+                     "image": "http://example.com"
+                   }
+                 ]
+               }
+               """;
     }
 
     public static String updateCartRequestBody() {
-        return "{\n" +
-               "  \"id\": 0,\n" +
-               "  \"userId\": 0,\n" +
-               "  \"products\": [\n" +
-               "    {\n" +
-               "      \"id\": 0,\n" +
-               "      \"title\": \"string\",\n" +
-               "      \"price\": 0.1,\n" +
-               "      \"description\": \"string\",\n" +
-               "      \"category\": \"string\",\n" +
-               "      \"image\": \"http://example.com\"\n" +
-               "    }\n" +
-               "  ]\n" +
-               "}";
+        return """
+               {
+                 "id": 0,
+                 "userId": 0,
+                 "products": [
+                   {
+                     "id": 0,
+                     "title": "string",
+                     "price": 0.1,
+                     "description": "string",
+                     "category": "string",
+                     "image": "http://example.com"
+                   }
+                 ]
+               }
+               """;
     }
 
     public static String createUserRequestBody() {
-        return "{\n" +
-               "  \"id\": 0,\n" +
-               "  \"username\": \"string\",\n" +
-               "  \"email\": \"string\",\n" +
-               "  \"password\": \"string\"\n" +
-               "}";
+        return """
+               {
+                 "id": 0,
+                 "username": "string",
+                 "email": "string",
+                 "password": "string"
+               }
+               """;
     }
 
     public static String updateUserRequestBody() {
-        return "{\n" +
-               "  \"id\": 0,\n" +
-               "  \"username\": \"string\",\n" +
-               "  \"email\": \"string\",\n" +
-               "  \"password\": \"string\"\n" +
-               "}";
+        return """
+               {
+                 "id": 0,
+                 "username": "string",
+                 "email": "string",
+                 "password": "string"
+               }
+               """;
     }
 
     @BeforeAll
